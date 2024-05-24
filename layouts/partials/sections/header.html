@@ -88,7 +88,7 @@
 
                     {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">
+                        <a class="nav-link" href="/#about" aria-label="about">
                             {{ .Site.Params.about.title | default "About" }}
                         </a>
                     </li>
@@ -96,7 +96,7 @@
 
                     {{ if and (.Site.Params.experience.enable | default false) (not (.Site.Params.navbar.menus.disableExperience | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#experience"
+                        <a class="nav-link" href="/#experience"
                             aria-label="experience">
                             {{ .Site.Params.experience.title | default "Experience" }}
                         </a>
@@ -105,7 +105,7 @@
 
                     {{ if and (.Site.Params.education.enable | default false) (not (.Site.Params.navbar.menus.disableEducation | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#education"
+                        <a class="nav-link" href="/#education"
                             aria-label="education">
                             {{ .Site.Params.education.title | default "Education" }}
                         </a>
@@ -114,7 +114,7 @@
 
                     {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
+                        <a class="nav-link" href="/#projects"
                             aria-label="projects">
                             {{ .Site.Params.projects.title | default "Projects" }}
                         </a>
@@ -123,7 +123,7 @@
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
+                        <a class="nav-link" href="/#achievements"
                             aria-label="achievements">
                             {{ .Site.Params.achievements.title | default "Achievements" }}
                         </a>
@@ -132,7 +132,7 @@
 
                     {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#contact"
+                        <a class="nav-link" href="/#contact"
                             aria-label="contact">
                             {{ .Site.Params.contact.title | default "Contact" }}
                         </a>

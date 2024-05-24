@@ -126,7 +126,7 @@ header .navbar.animate {
 
 #hero .image.animate img:hover {
     box-shadow: 0 0 11px rgb(15 80 100 / 20%);
-    filter: contrast(1.2);
+    filter: contrast(-1.2);
     cursor: pointer;
 }
 
@@ -153,7 +153,7 @@ header .navbar.animate {
     padding: 0.7rem 1.75rem;
     border: 1px solid var(--primary-color);
     color: var(--text-color) !important;
-    border-radius: .75rem;
+    border-radius: 1rem;
     transition: none;
 }
 
