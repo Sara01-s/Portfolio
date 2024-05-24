@@ -1,5 +1,5 @@
 baseURL: "https://sara01-s.github.io/Portfolio/"
-relativesURLs: true
+relativeURLs: true
 languageCode: "en-us"
 title: "Sara San Martín | Game Developer"
 theme: hugo-profile
