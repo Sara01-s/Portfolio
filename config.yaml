@@ -71,6 +71,7 @@ params:
   
   # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
+  customCSS: true
 
   # Whether the fade animations on the home page will be enabled
   animate: true
@@ -362,7 +363,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/Sara01-s
