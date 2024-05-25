@@ -1,0 +1,28 @@
+{{ if .Site.Params.video.enable | default true }}
+<section id="video" class="py-5">
+    <div class="container text-center">
+        <h3 class="text-video">{{ .Site.Params.video.title | default "Project reel" }}</h3>
+		<div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8eI0F-JKht8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="row justify-content-center py-5">
+            {{ $indexMenu := .Site.Params.video.index }}
+            {{ range $index, $element := .Site.Params.video.items }}
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    {{ if $indexMenu }}
+                    <div class="col-md-1 text-center me-2 p-0 d-none d-md-block">
+                        <div class="py-2">
+                            <span class="index shadow-lg">
+                                {{ add $index 1 }}
+                            </span>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

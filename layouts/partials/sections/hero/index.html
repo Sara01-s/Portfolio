@@ -21,7 +21,6 @@
                         {{ if .Site.Params.hero.button.enable }}
                         <a href="{{ .Site.Params.hero.button.url }}" class="btn"
 			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
                           {{ end }}>
                             {{ .Site.Params.hero.button.name }}
                         </a>

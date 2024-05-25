@@ -35,3 +35,15 @@
     padding: 20px;
     border-radius: 20px;
 }
+
+/* Video */
+.text-video {
+	font-family: "Lora", serif !important;
+	color: var(--text-secondary-color) !important;
+}
+
+.video-container iframe {
+	border-radius: 1rem;
+    width: 960px;
+    height: 540px;
+}

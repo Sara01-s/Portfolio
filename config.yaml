@@ -135,8 +135,8 @@ params:
     roundImage: true # Make hero image circular | default false
     button:
       enable: true
-      name: "About me"
-      url: "#about"
+      name: "Watch project reel"
+      url: "#video"
       download: true
       newPage: false
     socialLinks:
