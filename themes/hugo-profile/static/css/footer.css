@@ -3,12 +3,12 @@ footer a h5 {
 }
 
 footer a {
-    text-decoration: none;
-    color: var(--text-secondary-color) !important;
+  text-decoration: none;
+  color: var(--text-secondary-color) !important;
 }
 
 footer a:hover {
-    color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 footer .card {

@@ -47,3 +47,68 @@
     max-width: 100%;
 	padding-bottom: 5px !important;
 }
+
+a h5 {
+    color: var(--text-color) !important;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-secondary-color) !important;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+.card {
+    background-color: var(--secondary-color) !important;
+    border-radius: .75rem;
+    cursor: context-menu;
+    overflow: hidden;
+    border: none;
+}
+
+.card:hover {
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+}
+
+.card-text * {
+    background-color: var(--secondary-color) !important;
+}
+
+.card-footer {
+    background-color: var(--background-color) !important;
+    padding: .8em .7em;
+    border: 1px solid var(--secondary-color);
+}
+
+.card-footer a {
+    color: var(--text-secondary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: none;
+    background-color: var(--background-color) !important;
+}
+
+.card-footer a:hover {
+    color: var(--primary-color) !important;
+    opacity: 0.8;
+}
+
+.card-footer a:focus {
+    box-shadow: none !important;
+}
+
+.card > .card-header {
+    padding: 0 !important;
+    border: none !important;
+    background-color: var(--secondary-color) !important;
+}
+
+.card > .card-header .card-img-top {
+    width: 100%;
+    height: 250px !important;
+    object-fit: cover;
+    background-color: transparent !important;
+}
