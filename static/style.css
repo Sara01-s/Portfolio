@@ -44,6 +44,6 @@
 
 .video-container iframe {
 	border-radius: 1rem;
-    width: 960px;
-    height: 540px;
+    max-width: 100%;
+	padding-bottom: 5px !important;
 }

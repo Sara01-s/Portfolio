@@ -24,12 +24,17 @@ markup:
       unsafe: true
 
 Menus:
-  #main:
+  # main:
+    # - identifier: reel
+    #   name: Reel
+    #   title: Project Reel
+    #   url: "video"
+    #   weight: 1
     # - identifier: blog
     #   name: Devlogs
     #   title: Blog posts
-    #   url: /blogs
-    #   weight: 1
+    #   url: "blogs"
+    #   weight: 2
   # - identifier: gallery
   #   name: Gallery
   #   title: Blog posts
@@ -363,7 +368,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: false
+      enable: true
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/Sara01-s
