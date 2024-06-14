@@ -62,7 +62,7 @@ params:
   title: "Sara San Martín"
   description: My personal portfolio and blog.
   #staticPath: "public"  # The path to serve the static files from
-  favicon: "images/logo.png"
+  favicon: "images/logo_square.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -134,7 +134,7 @@ params:
     title: "Sara San Martín."
     subtitle: "Game Developer."
     content: "Focused on Software Arquitecture and Computer Graphics."
-    image: images/logo.png
+    image: images/logo_square.png
     bottomImage:
       enable: false
     roundImage: true # Make hero image circular | default false
