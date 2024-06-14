@@ -132,8 +132,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Sara San Martín."
-    subtitle: "I design and code games."
-    content: "Game developer. Focused on Software Arquitecture and Graphics programming."
+    subtitle: "Game Developer."
+    content: "Focused on Software Arquitecture and Computer Graphics."
     image: images/logo.png
     bottomImage:
       enable: false
