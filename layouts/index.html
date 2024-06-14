@@ -5,6 +5,17 @@
 
 <!-- fontawesome -->
 <script defer src="{{ .Site.Params.staticPath }}/fontawesome-6/all-6.4.2.js"></script>
+<script>
+	MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		},
+		svg: {
+			fontCache: 'global'
+		}
+	};
+</script>
+<script type="text/javascript" id ="Mathjax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 {{ end }}
 
 {{ define "title" }}

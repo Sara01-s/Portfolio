@@ -133,7 +133,7 @@ params:
     intro: "Hi, my name is"
     title: "Sara San Martín."
     subtitle: "I design and code games."
-    content: "A passionate game developer. Focused on Software Arquitecture and Graphics programming."
+    content: "Game developer. Focused on Software Arquitecture and Graphics programming."
     image: images/logo.png
     bottomImage:
       enable: false
@@ -160,9 +160,9 @@ params:
     title: "About Me"
     image: "images/logo.png"
     content: |-
-      I am a game developer with experience working with Unity. My passion has always been the creation of multimedia content. I started making videos and music at a very young age, and now, combined with my passion for programming and mathematics, I have become passionate about game development.
+      I am a game developer with experience working with Unity. I've always enjoyed creating multimedia content. I started making videos and music at a very young age, and now, combined with my enthusiasm for programming and mathematics, I have become passionate about game development.
       
-      I am currently working on an <a href="https://github.com/Sara01-s/VulkanEngine" target="_blank">*ECS Vulkan Engine*🔗</a>, with the goal of learning how Graphics and GPUs work at a deep level.
+      I am currently working on perfecting my mathematical and computer graphics abilities to become a graphics programmer :).
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -368,7 +368,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: false
+      enable: true
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/Sara01-s

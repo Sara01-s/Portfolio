@@ -1,8 +1,8 @@
 ---
-title: "Render Math With Mathjax"
-date: 2022-12-09T19:53:33+05:30
-draft: false
-author: "Gurusabarish"
+title: "Test blog about Mathjax"
+date: 2024-05-25T19:53:33+05:30
+draft: true
+author: "Sara San Martín"
 tags:
   - Markdown syntax
   - Mathjax
