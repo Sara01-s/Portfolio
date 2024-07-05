@@ -1,7 +1,7 @@
 ---
 title: "Test blog about Mathjax"
 date: 2024-05-25T19:53:33+05:30
-draft: true
+draft: false
 author: "Sara San Martín"
 tags:
   - Markdown syntax
