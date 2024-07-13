@@ -30,11 +30,11 @@ Menus:
     #   title: Project Reel
     #   url: "video"
     #   weight: 1
-  - identifier: blog
-    name: Devlogs
-    title: Blog posts
-    url: "blogs"
-    weight: 1
+  # - identifier: blog
+  #   name: Devlogs
+  #   title: Blog posts
+  #   url: "blogs"
+  #   weight: 1
   # - identifier: gallery
   #   name: Gallery
   #   title: Blog posts
