@@ -1,6 +1,5 @@
 ---
 title: "Shell Texturing (Spanish)"
-url: /blogs/shell-texturing
 date: 2024-07-12T21:20:00-04:00
 draft: false
 author: "Sara San Martín"
