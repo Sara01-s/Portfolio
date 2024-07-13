@@ -13,13 +13,13 @@
             <div class="card h-100">
                 {{ if and (not (.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) (.Params.image) }}
                 <div class="card-header">
-                    <a href="{{ .RelPermalink }}">
+                    <a href="{{ .Permalink }}">
                         <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
                     </a>
                 </div>
                 {{ end }}
                 <div class="card-body bg-transparent p-3 shadow-sm">
-                    <a href="{{ .RelPermalink }}" class="primary-font card-title">
+                    <a href="{{ .Permalink }}" class="primary-font card-title">
                         <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 25 }}</h5>
                     </a>
                     <div class="card-text secondary-font">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="mt-auto card-footer">
                     <span class="float-start">{{ .Date.Format (.Site.Params.datesFormat.articleRecent | default "January 2, 2006") }}</span>
-                    <a href="{{ .RelPermalink }}" class="float-end btn btn-outline-info btn-sm">{{ .Site.Params.terms.read | default "Read" }}</a>
+                    <a href="{{ .Permalink }}" class="float-end btn btn-outline-info btn-sm">{{ .Site.Params.terms.read | default "Read" }}</a>
                 </div>
             </div>
         </div>
