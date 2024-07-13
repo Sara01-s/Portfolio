@@ -328,7 +328,7 @@ $$\hat{u} \cdot \hat{v} = \cos{\theta}.$$
 
 En Unity, podemos obtener el vector normalizado que apunta hacia la dirección de la luz si consultamos el *Manual de Built-in Shader Variables [4]*, donde se encuentra estípulado que dicho vector se puede se puede acceder con la variable `_WorldSpaceLight0`. Es importante que esta variable esté en *world space*, ya que si normalizamos este vector (quitarle su magnitud), obtendremos la dirección hacia su posición desde el origen del mundo.
 
-Antes de mostrar el resultado, destacaré el hecho de que el dominio de la función \\(\cos{\theta}\\) es \\((-1 \le \cos{\theta} \le 1)\\) y al no existir luz negativa, se *clampea* el resultado al rango \\([0, 1]\\). Por lo que la ecuación final queda:
+Antes de mostrar el resultado, destacaré el hecho de que el rango de la función \\(\cos{\theta}\\) es \\((-1 \le \cos{\theta} \le 1)\\) y al no existir luz negativa, se *clampea* el resultado al rango \\([0, 1]\\). Por lo que la ecuación final queda:
 
 $$P_c = \max(0, N \cdot \hat{L_p}).$$
 
