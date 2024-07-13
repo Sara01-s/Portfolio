@@ -1,6 +1,6 @@
 ---
 title: "Shell Texturing (Spanish)"
-date: 2024-07-21T21:20:00-04:00
+date: 2024-07-12T21:20:00-04:00
 draft: false
 author: "Sara San Martín"
 tags:
@@ -13,6 +13,7 @@ description: "Learning to implement Shell Texturing"
 mathjax: true
 toc:
 ---
+
 *Figura 1. GIF Resultado de la investigación.*
 
 # Shell texturing
