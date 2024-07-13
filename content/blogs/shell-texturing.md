@@ -1,6 +1,6 @@
 ---
 title: "Shell Texturing (Spanish)"
-date: 2024-06-13T21:20:00-04:00
+date: 2024-07-21T21:20:00-04:00
 draft: false
 author: "Sara San Martín"
 tags:
@@ -21,11 +21,11 @@ toc:
 ## Introducción
 Navegando por Youtube, tuve el agrado de encontrar el [video sobre Shell Texturing](https://www.youtube.com/watch?v=9dr-tRQzij4) hecho por *Acerola* [1], donde explica lo difícil que es renderizar y simular el pelo, de media, los humanos tenemos entre `90.000` y `150.000` pelos en la cabeza [2], así que hay que imaginarse lo compleja que sería geométricamente una simulación físicamente precisa del pelo.
 
-Esto llamó inmediatamente mi curiosidad, pues lo primero que te preguntas es: *"¿Cómo es que desde hace años existen videojuegos que han logrado renderizar pelo o pelaje en hardware significamente menos eficiente que el actual (2024) pareciendo algo tan complejo de lograr?"*. Por lo que me propuse ver el video, implementar esta *ilusión* de pelaje en el motor de videojuegos *Unity* y realizar este registro sobre mi exploración donde entraré en detalle y diseccionaré paso a paso este efecto y así aportar mi granito de arena, ¡espero sea de tu agrado!.
+Esto llamó inmediatamente mi curiosidad, pues me pregunté: *"¿Cómo es que desde hace años existen videojuegos que han logrado renderizar pelo o pelaje en hardware significamente menos eficiente que el actual (2024) pareciendo algo tan complejo de lograr?"*. Por lo que me propuse ver el video, implementar esta *ilusión* de pelaje en el motor de videojuegos *Unity* y realizar este registro sobre mi exploración donde entraré en detalle y diseccionaré paso a paso este efecto y así aportar mi granito de arena, ¡espero sea de tu agrado!.
 
 ## Hashing
 ---
-Nuestro primer objetivo será generar una grilla de celdas con valores pseudo-aleatorios del \\([0, 1]\\) sobre la superficie de nuestro mesh.
+Nuestro primer objetivo será generar una grilla de celdas con valores pseudo-aleatorios (deterministas pero difíciles de predecir) del \\([0, 1]\\) sobre la superficie de nuestro mesh.
 
 Para resolver la generación de valores pseudo-aleatorios  podemos utilizar una función de *hash*.
 
@@ -219,7 +219,7 @@ Uno esperaría que los shells se extruyeran de forma ortogonal a las caras del m
 
 *Figura 21. los shells ahora crecen en dirección a la normal.*
 
-Nuestra esféra se ve mucho mejor ahora, aunque algo cuadrada. Si no se es muy fan de un estilo tipo Cube World, podemos mejorar el efecto para conseguir una ilusión de hebras de césped.
+Nuestra esféra se ve mucho mejor ahora, aunque algo cuadrada, con un un estilo tipo Cube World. Podemos mejorar el efecto para conseguir una ilusión de hebras de césped.
 
 Para lograr un efecto más parecido al pasto debemos dividir el espacio en segmentos de coordenadas `uv` para cada hoja de pasto. Este es el caso idóneo para utilizar la función `frac()`, la cual nos devuelve el valor decimal de un número flotante.
 
@@ -299,7 +299,7 @@ Figura 34. resultado final, un lindo pasto.
 ## Iluminación
 ---
 
-Como ejercicio final, se puede mejorar el modelo de iluminación y agregar demás efectos para embellecer un render final de la técnica de shell texturing, para eso me basaré en el trabajo de Adrian Mendez y su implementación del modelo de iluminación de *Genshin Impact*.
+Como ejercicio final, se puede mejorar el modelo de iluminación y agregar demás efectos para embellecer un render final de la técnica de shell texturing, para eso me basaré en el trabajo de Adrian Mendez [3] y su implementación del modelo de iluminación de *Genshin Impact*.
 
 Utilizaremos la esféra para probar el modelo de iluminación.
 
@@ -325,7 +325,7 @@ $$\vec{u} \cdot \vec{v} = 1 \times 1 \times \cos{\theta}. \\
 Por lo que,
 $$\hat{u} \cdot \hat{v} = \cos{\theta}.$$
 
-En Unity, podemos obtener el vector normalizado que apunta hacia la dirección de la luz si consultamos el *Manual de Built-in Shader Variables^[3]*, donde se encuentra estípulado que dicho vector se puede se puede acceder con la variable `_WorldSpaceLight0`. Es importante que esta variable esté en *world space*, ya que si normalizamos este vector (quitarle su magnitud), obtendremos la dirección hacia su posición desde el origen del mundo.
+En Unity, podemos obtener el vector normalizado que apunta hacia la dirección de la luz si consultamos el *Manual de Built-in Shader Variables [4]*, donde se encuentra estípulado que dicho vector se puede se puede acceder con la variable `_WorldSpaceLight0`. Es importante que esta variable esté en *world space*, ya que si normalizamos este vector (quitarle su magnitud), obtendremos la dirección hacia su posición desde el origen del mundo.
 
 Antes de mostrar el resultado, destacaré el hecho de que el dominio de la función \\(\cos{\theta}\\) es \\((-1 \le \cos{\theta} \le 1)\\) y al no existir luz negativa, se *clampea* el resultado al rango \\([0, 1]\\). Por lo que la ecuación final queda:
 
@@ -352,7 +352,7 @@ Utilizando el valor de nuestro *diffuse* suavizado, generamos un `lerp()` entre 
 
 *Figura 38. color base y de sombra agregados con una interpolación linear.*
 
-En mi opinión, la sombra luce muy *dura*, por lo que seguiré los pasos de Acerola en su video sobre Shell Texturing y aplicaré un *Half lambert diffuse^[5]*, que no es nada más que modificar la diffusión de Lambert tal que,
+En mi opinión, la sombra luce muy *dura*, por lo que seguiré los pasos de Acerola en su video sobre Shell Texturing y aplicaré un *Half lambert diffuse [5]*, que no es nada más que modificar la diffusión de Lambert tal que,
 
 $$P_c = \max(0, N \cdot \hat{L_p}) \times 0.5 + 0.5.$$
 
