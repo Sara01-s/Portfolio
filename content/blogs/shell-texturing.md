@@ -332,7 +332,7 @@ Antes de mostrar el resultado, destacaré el hecho de que el rango de la funció
 
 $$P_c = \max(0, N \cdot \hat{L_p}).$$
 
-Donde \\(N\\) es la normal y \\(L_p\\) es la posición de la luz en espacio mundial.
+Donde \\(N\\) es la normal y \\(L_p\\) es la posición normalizada de la luz en espacio mundial.
 
 ![Figura 36. diffuse lightning simple.](../../images/blogs/shell-texturing/imgs/img_ndotl.png)
 
