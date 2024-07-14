@@ -1,5 +1,5 @@
-baseURL: "https://sara01-s.github.io/"
-relativeURLs: false
+baseURL: "https://sara01-s.github.io/Portfolio"
+relativeURLs: true
 languageCode: "en-us"
 title: "Sara San Martín | Game Developer"
 theme: hugo-profile
@@ -61,7 +61,7 @@ Menus:
 params:
   title: "Sara San Martín"
   description: My personal portfolio and blog.
-  staticPath: "public"  # The path to serve the static files from
+  #staticPath: "public"  # The path to serve the static files from
   favicon: "images/logo_square.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
