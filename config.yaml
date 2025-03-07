@@ -182,7 +182,7 @@ params:
       - job: "Freelance Unity Developer"
         company: "Friendly Llama"
         companyUrl: "https://friendlyllama.com"
-        date: "Apr 2024 - present"
+        date: "Apr 2024 - Jun 2024"
         featuredLink:
           enable: true
           name: "View the project"
@@ -215,7 +215,7 @@ params:
           - Unreal Engine Blueprints, C++
           - Visual Studio 2022
 
-          *(Providencia, Chile - Hibrid)*
+          *(Providencia, Chile - Hybrid)*
 
       - job: "Unity VR Developer"
         company: "Minverso"
@@ -355,7 +355,7 @@ params:
     enable: true
     title: "Contact me"
     content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    btnName: Mail me
+    btnName: Let's talk
     btnLink: mailto:saraosses01@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
