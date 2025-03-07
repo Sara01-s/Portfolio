@@ -160,9 +160,10 @@ params:
     title: "About Me"
     image: "images/logo.png"
     content: |-
-      I am a game developer with experience working with Unity. I've always enjoyed creating multimedia content. I started making videos and music at a very young age, and now, combined with my enthusiasm for programming and mathematics, I have become passionate about game development.
-      
-      I am currently working on perfecting my mathematical and computer graphics skills to become a graphics programmer :).
+    I am a game developer with experience working with Unity. I have a long-standing interest in multimedia content creation. I began creating videos and music at a very early age and, combining this with my enthusiasm for programming and mathematics, has led to my enthusiasm for game development.
+
+    Currently, I am focusing on enhancing my proficiency in mathematics and computer graphics with the goal of becoming a graphics programmer.
+    I have recently been working with the following technologies:
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
